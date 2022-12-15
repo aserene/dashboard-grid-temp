@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,32 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.App {
+  background-color: rgb(35, 35, 35);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 10px;
+  grid-template-rows: 30% 30% 30%;
+  row-gap: 10px;
+  height: 100vh;
+  width: 100vw;
+}
+.analysis, .nav, .rating, .reviews, .visitors {
+  background-color: rgb(69, 69, 69);
+}
+.nav {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4
+}
+.nav ul li{
+  list-style-type: none;
+}
+.visitors {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4
 }
